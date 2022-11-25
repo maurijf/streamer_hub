@@ -60,13 +60,70 @@ body {
 
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightgray;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25rem 25rem 25rem;
+    background-color: rgb(207, 207, 207);
+    gap: .3rem
 }
 
 .portfolio-item-wrapper {
     position: relative;
 }
+
+.portfolio-item-wrapper:nth-child(1) {
+    background: url(images/Lifsu.png) center / cover no-repeat;
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+}
+
+.portfolio-item-wrapper:nth-child(2) {
+    background: url(images/Jeff.png) center / cover no-repeat;
+    grid-column:2 / 3;
+    grid-row: 1 / 2;
+}
+
+.portfolio-item-wrapper:nth-child(3) {
+    background: url(images/Brew.png) center / cover no-repeat;
+    grid-column:3 / 4;
+    grid-row: 1 / 2;
+}
+
+.portfolio-item-wrapper:nth-child(4) {
+    background: url(https://preview.redd.it/rdulwh75jc431.jpg?width=960&crop=smart&auto=webp&s=0a4a00b502fc84abaff17bf1f7eed47a7b1ee142) center / cover no-repeat;
+    grid-column:1 / 2;
+    grid-row: 2 / 3;
+}
+
+.portfolio-item-wrapper:nth-child(5) {
+    background: url(https://cdna.artstation.com/p/assets/images/images/054/096/270/large/nate-senay-koops-ref.jpg?1663756080) center / cover no-repeat;
+    grid-column:2 / 3;
+    grid-row: 2 / 3;
+}
+
+.portfolio-item-wrapper:nth-child(6) {
+    background: url(https://preview.redd.it/eu76k00o0pb21.jpg?width=640&crop=smart&auto=webp&s=f407b7fde058ffdc3b6f2db0a295e2f55fd0ab65) center / cover no-repeat;
+    grid-column:3 / 4;
+    grid-row: 2 / 3;
+}
+
+.portfolio-item-wrapper:nth-child(7) {
+    background: url(https://drawcartoonstyle.com/wp-content/uploads/2022/08/10-add-blush-spots-to-the-bees-face-600x600.jpg?ezimgfmt=ng:webp/ngcb1) center / cover no-repeat;
+    grid-column:1 / 2;
+    grid-row: 3 / 4;
+}
+
+.portfolio-item-wrapper:nth-child(8) {
+    background-image: url(https://www.scaryforkids.com/pics/scarecrow.jpg) center / cover no-repeat;
+    grid-column:2 / 3;
+    grid-row: 3 / 4;
+}
+
+.portfolio-item-wrapper:nth-child(9) {
+    background: url(images/Jbird.png) center / cover no-repeat;
+    grid-column:3 / 4;
+    grid-row: 3 / 4;
+}
+
 
 .portfolio-img-background {
     height: 350px;
@@ -77,12 +134,10 @@ body {
 }
 
 .img-text-wrapper {
-    position: absolute;
     top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100%;
     text-align: center;
     padding-left: 100px;
@@ -90,9 +145,11 @@ body {
 }
 
 .logo-wrapper img {
-    width: 50%;
-    margin-bottom: 20px;}
-
+    width: 30%;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 100px;
+}
 
 .img-text-wrapper .subtitle {
     transition: 1s;
